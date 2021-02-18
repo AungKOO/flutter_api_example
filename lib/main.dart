@@ -4,7 +4,10 @@ import 'package:flutter_api_example/network/api_service.dart';
 import 'package:provider/provider.dart';
 import 'package:logging/logging.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  _setupLogging();
+  runApp(MyApp());
+}
 
 void _setupLogging() {
   Logger.root.level = Level.ALL;
